@@ -1,0 +1,23 @@
+// start waarden
+pianocat.red = 230
+pianocat.green = 10
+pianocat.blue = 6
+pianocat.n_lives = 1
+
+----------------------
+
+// eind waarden
+ceilingcat.red = 7
+ceilingcat.green = 4
+ceilingcat.blue = 5
+ceilingcat.n_lives = 9
+
+happycat.red = 118
+happycat.green = 7
+happycat.blue = 5
+happycat.n_lives = 10
+
+pianocat.red = 255
+pianocat.green = 40
+pianocat.blue = 30
+pianocat.n_lives = 9

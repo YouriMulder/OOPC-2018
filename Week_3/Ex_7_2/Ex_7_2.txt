@@ -1,0 +1,12 @@
+1	GEEN error	- File verwacht een car. Batmobile is een car.
+2	GEEN error	- Ovchipkaart verwacht een train. Utr-amst is een intercity die als superclasss train en vehicle heeft
+3	Error		- File verwacht een car, maar ontvangt een train die geen car als superclass heeft.
+4	Error		- Ovchipkaart verwacht een train, maar ontvangt een car die geen train als superclass heeft.
+5	GEEN error	- Travel verwacht een vehicle. Utr-amst is een intercity die als superclasses train en vehicle heeft.
+6	GEEN error	- Travel verwacht een vehicle. Batmobile is een car die als superclass vehicle heeft.
+7	GEEN error	- Utr-amst is een intercity. dus kan in een intercity variabele worden geplaatst.
+8	Error		- Utr-amst is een intercity en heeft geen car als superclass. Dus kan NIET in een variabele car geplaatst worden.
+9	GEEN error	- Utr_amst is een intercity en heeft train en vehicle als superclass. Dus kan in variabele een train geplaatst worden.
+10	Error		- Batmobile is een car en heeft geen superclass train. Dus kan NIET in een variabele train geplaatst worden.
+11	Error		- Batmobile is een car en heeft geen superclass intercity. Dus kan NIET in een variabele intercity geplaatst worden.
+12	Error		- ICE is een train en heeft geen superclass intercity. Dus kan NIET in een variabele intercity geplaatst worden.

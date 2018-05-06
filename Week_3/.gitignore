@@ -1,0 +1,6 @@
+*.project
+html
+*.o
+*.exe
+*.cson
+Doxyfile

@@ -1,0 +1,22 @@
+5.2.1.	Wat doet de contructor van de klasse book?
+De constructor van de klasse book zorgt ervoor dat tekst, author en title goed worden gedefineerd.
+In dit geval heeft de programmeur een eigen constructor gemaakt die de paramethers tekst, author en title neemt.
+Deze paramethers worden gebruikt op de variabele van de aangemaakte object te definieren die dezelfde naam hebben.
+Er wordt hier gebruik gemaakt van een initialisatie lijst in plaats van de variabele in de body goed te zetten.
+
+5.2.2.	Hoe noemen we de tekst tussen de : (dubbelepunt) en de { (krulhaak) bij de constructor?
+Dit wordt de initialisatie lijst genoemd. Deze initialisatie lijst is erg handig als je gebruikt maakt van variables by reference, omdat je dan geen foutmeldingen krijgt.
+Een object moet namelijk van deze variabele van tevoren weten waar het naartoe wijst anders loopt je programma in de soep als je functies aanroept die van deze variable by reference gebruik maakt.
+
+5.2.3.	Welke functies van de klasse book zijn van buitenaf toegankelijk?
+In dit geval is de constructor van buitenaf toegankelijk, maar je kan erover discusseren of dit daadwerkelijk een functie/method is.
+Daarnaast is print toegankelijk van buitenaf. De overige functies zijn private. Dus niet benaderbaar van buitenaf.
+
+5.2.4.	Waarom denk je de schrijver van deze code er voor heeft gekozen sommige functies private te maken?
+Het is in sommige gevallen niet verstandig om bepaalde functies/methods van buitenaf benaderbaar te maken, omdat er dan dingen aangepast kunnen worden door andere functies die niet horen te kunnen.
+In dit geval gaat het om print_text(), print_author() en print_title().
+Deze functies/methods heeft de programmeur niet nodig buiten de class, omdat print() ze allemaal tegelijk al aanroept.
+
+5.2.5.	Waarom staat er in de .cpp voor elke functie “book::”?
+Als de programmeur dit niet doet weet de compiler niet bij welke klasse dit hoort, omdat deze methods buiten de klasse hun definitie.
+Als je ze definieert in de klasse is de book:: niet nodig. Als book:: er niet voor staat krijg je een error, omdat de compiler dan niet weet bij welke klasse deze functie hoort.

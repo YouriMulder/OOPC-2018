@@ -1,0 +1,9 @@
+a klas
+b std::vector<char>
+c student
+d std::string
+e int
+f mark
+g course
+h uint8_t
+i std::string

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="example code" Database="" Version="10.0.0">
+  <Project Name="Ex_6_2" Path="Ex_6_2/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Ex_6_2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Ex_6_3" Path="Ex_6_3/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Ex_6_3" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Ex_6_4" Path="Ex_6_4/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Ex_6_4" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
