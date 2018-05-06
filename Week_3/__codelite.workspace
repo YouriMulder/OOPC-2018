@@ -6,9 +6,4 @@
       <Project Name="Ex_7_3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="test" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
 </CodeLite_Workspace>

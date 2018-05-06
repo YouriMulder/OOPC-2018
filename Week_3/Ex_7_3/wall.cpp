@@ -1,14 +1,18 @@
 #include "wall.hpp"
+#include <iostream>
 
-Wall::Wall(window& w, const vector& start, const vector& end,
-	int update_interval):
-	rectangle(w, start, end), w(w), update_interval(update_interval)
-{}
-
-void Wall::update() {
-
+wall::wall(window &w, const vector &start, const vector &end, int updateInterval):
+	rectangle(w, start, end, 0),
+	updateInterval(updateInterval),
+	updateCount(0)
+ {}
+ 
+void wall::update() {
+	if(updateCount == updateInterval) {
+		filled = !filled;
+		updateCount = 0;
+	} else {
+		updateCount++;
+	}
 }
 
-void Wall::draw() {
-
-}

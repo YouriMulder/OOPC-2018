@@ -16,8 +16,10 @@ private:
    line right;
    line top;
    line bottom;
+   
 public:
-   rectangle( window & w, const vector & start, const vector & end );   
+   bool filled;
+   rectangle( window & w, const vector & start, const vector & end, bool filled = 0);   
    void draw() override;
 };
 
