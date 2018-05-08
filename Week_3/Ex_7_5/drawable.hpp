@@ -10,8 +10,6 @@ protected:
 	window w;
 	vector location;
 	vector size;
-
-public:
 	vector bounce;
 
 public:
@@ -23,6 +21,11 @@ public:
 	virtual void interact(drawable & other) {}
 
 	std::ostream & print(std::ostream & out) const;
+
+public:
+	vector getBounce() const;
+	vector getEnd() const;
+	void updateSize(const vector & end);
 };
 
 std::ostream & operator<<(std::ostream & lhs, const drawable & rhs);

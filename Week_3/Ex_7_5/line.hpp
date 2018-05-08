@@ -7,13 +7,18 @@
 
 class line : public drawable {
 private:
-   vector end;
+	vector end;
 public:
-   line( window & w, const vector & location, const vector & end ):
-      drawable( w, location, end - location ),
-      end( end )
-   {}
-   void draw() override;
+	line(window & w, const vector & location, const vector & end):
+		drawable(w, location, end - location),
+		end(end)
+	{}
+	void draw() override;
+
+	void setEnd(vector newEnd);
+	void setStart(vector newStart);
+	void setStartAndEnd(const vector & newStart, const vector & newEnd);
+
 };
 
 #endif // LINE_HPP

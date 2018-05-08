@@ -13,8 +13,7 @@ ball::ball(window & w, const vector & midpoint, int radius, const vector & speed
 void ball::interact(drawable & other) {
 	if(this != & other) {
 		if(overlaps(other)) {
-			speed.x *= other.bounce.x;
-			speed.y *= other.bounce.y;
+			speed *= other.getBounce();
 		}
 	}
 }

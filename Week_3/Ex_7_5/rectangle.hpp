@@ -22,6 +22,7 @@ public:
 	rectangle(window & w, const vector & start, const vector & end,
 	          bool filled = 0, const vector & bounce = vector(1, 1));
 	void draw() override;
+	void update() override;
 };
 
 

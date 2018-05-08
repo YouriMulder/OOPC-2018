@@ -12,7 +12,7 @@ class wall : public rectangle {
 public:
 	wall(window &w, const vector & start, const vector & end, int updateInterval,
 	     const vector& bounce);
-	void update();
+	void update() override;
 };
 
 #endif // WALL_HPP

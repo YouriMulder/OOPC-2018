@@ -22,10 +22,27 @@ void rectangle::draw() {
 	bottom.draw();
 
 	if(filled) {
-		for(int y = 0; y < size.y; y++) {
-			for(int x = 0; x < size.x; x++) {
-				w.draw(vector(location.x + x, location.y + y));
+		int locationXEnd = location.x + size.x;
+		int locationYEnd = location.y + size.y;
+
+		for(int x = location.x; x < locationXEnd; x++) {
+			for(int y = location.y; y < locationYEnd; y++) {
+				w.draw(vector(x, y));
 			}
 		}
 	}
+}
+
+void rectangle::update() {
+	int locationXEnd = location.x + size.x;
+	int locationYEnd = location.y + size.y;
+	vector topLeftCorner = location;
+	vector botLeftCorner = vector(location.x, locationYEnd);
+	vector topRightCorner = vector(locationXEnd, location.y);
+	vector botRightCorner = vector(locationXEnd, locationYEnd);
+
+	left.setStartAndEnd(topLeftCorner, botLeftCorner);
+	right.setStartAndEnd(topRightCorner, botRightCorner);
+	top.setStartAndEnd(topLeftCorner, topRightCorner);
+	bottom.setStartAndEnd(botLeftCorner, botRightCorner);
 }

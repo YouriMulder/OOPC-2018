@@ -22,9 +22,12 @@ void rectangle::draw() {
 	bottom.draw();
 
 	if(filled) {
-		for(int y = 0; y < size.y; y++) {
-			for(int x = 0; x < size.x; x++) {
-				w.draw(vector(location.x + x, location.y + y));
+		int locationXEnd = location.x + size.x;
+		int locationYEnd = location.y + size.y;
+
+		for(int x = location.x; x < locationXEnd; x++) {
+			for(int y = location.y; y < locationYEnd; y++) {
+				w.draw(vector(x, y));
 			}
 		}
 	}

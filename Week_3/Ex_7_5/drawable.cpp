@@ -41,6 +41,10 @@ std::ostream & drawable::print(std::ostream & out) const {
 	return out << location << location + size;
 }
 
+vector drawable::getBounce() const { return bounce; }
+vector drawable::getEnd() const { return location + size; }
+void drawable::updateSize(const vector & end) { size = end - location; }
+
 std::ostream & operator<<(std::ostream & lhs, const drawable & rhs) {
 	return rhs.print(lhs);
 }
