@@ -1,9 +1,9 @@
 a klas
-b std::vector<char>
+b std::array<char>
 c student
 d std::string
 e int
 f mark
 g course
 h uint8_t
-i std::string
+i std::vector<char>

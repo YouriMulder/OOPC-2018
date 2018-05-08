@@ -1,68 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="F:\Programming\C++\OOPC-2018\Week_3\__codelite.workspace">
-  <int Value="1" Name="m_selectedTab"/>
-  <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\__codelite.workspace" Name="m_workspaceName"/>
+<Session Name="D:\School\Blok_D\CPP_OOP\Exercises\Week_3\__codelite.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="D:\School\Blok_D\CPP_OOP\Exercises\Week_3\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\main.cpp" Name="FileName"/>
-      <int Value="3" Name="FirstVisibleLine"/>
-      <int Value="19" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\rectangle.cpp" Name="FileName"/>
+      <wxString Value="D:\School\Blok_D\CPP_OOP\Exercises\Week_3\Ex_7_5\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\rectangle.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="15" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\wall.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="12" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\wall.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\line.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\Makefile" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="11" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\drawable.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="11" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_3\Ex_7_3\window.cpp" Name="FileName"/>
-      <int Value="102" Name="FirstVisibleLine"/>
-      <int Value="123" Name="CurrentLine"/>
+      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
