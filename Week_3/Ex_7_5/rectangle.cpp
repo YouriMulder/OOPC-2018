@@ -11,7 +11,7 @@ rectangle::rectangle(window & w, const vector & start, const vector & end,
 	left(w, vector(start.x, start.y), vector(start.x, end.y)),
 	right(w, vector(end.x,   start.y), vector(end.x,   end.y)),
 	top(w, vector(start.x, start.y), vector(end.x,   start.y)),
-	bottom(w, vector(start.x, end.y), vector(end.x,   end.y)),
+	bottom(w, vector(start.x, end.y), vector(end.x + 1,   end.y)),
 	filled(filled)
 {}
 

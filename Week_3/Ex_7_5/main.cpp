@@ -39,10 +39,10 @@ int main() {
 	int victimHeight = 8;
 
 	victim testVictim(w,
-	                  vector(usableWindowWidth/2 - victimWidth/2,
-	                         usableWindowHeight/2 - victimHeight/2),
-	                  vector(usableWindowWidth/2 + victimWidth/2,
-	                         usableWindowHeight/2 + victimHeight/2), 2);
+	                  vector(windowWidth/2 - victimWidth/2,
+	                         windowHeight/2 - victimHeight/2),
+	                  vector(windowWidth/2 + victimWidth/2,
+	                         windowHeight/2 + victimHeight/2), 2);
 
 	ball b(w, vector(50, 20), 9, vector(5, 2));
 
@@ -51,7 +51,6 @@ int main() {
 	                                      };
 
 	for(;;) {
-		std::cout << testVictim.isTouched << "\n";
 		w.clear();
 		for(auto & p : objects) {
 			p->draw();

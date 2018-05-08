@@ -1,9 +1,8 @@
 #include "victim.hpp"
-#include <iostream>
 
 victim::victim(window & w, const vector & start, const vector & end,
                int dissapearStepSize):
-	rectangle(w, start, end, 1),
+	rectangle(w, start, end),
 	dissapearStepSize(dissapearStepSize),
 	isTouched(false)
 {}
