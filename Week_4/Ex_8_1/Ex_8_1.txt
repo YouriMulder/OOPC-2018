@@ -1,0 +1,7 @@
+Wat betekent de term ‘bare metal’?
+	Direct op het metaal. Je kan hierdoor (bijna)alle hardware direct aansturen.
+Wat is het nut van een ‘weak pull-up’?
+	Door deze weak pull-up onstaat er een stabielere power level.
+Wat is het nut van een namespace, welk probleem kan je ermee vermijden?
+	Als je bij alle libraries de namespaces weg haalt kunnen er problemen ontstaan.
+	Als er bijvoorbeeld functies zijn met dezelfde namen en parameters weet de compiler niet welke je wil gebruiken.

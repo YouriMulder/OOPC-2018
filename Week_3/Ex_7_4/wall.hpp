@@ -5,7 +5,7 @@
 #include "vector.hpp"
 
 class wall : public rectangle {
-
+private:
 	unsigned int updateInterval;
 	unsigned int updateCount;
 

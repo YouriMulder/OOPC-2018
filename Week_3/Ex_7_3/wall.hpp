@@ -5,10 +5,10 @@
 #include "vector.hpp"
 
 class wall : public rectangle {
-	
+private:
 	unsigned int updateInterval;
 	unsigned int updateCount;
-	
+
 public:
 	wall(window &w, const vector &start, const vector &end, int updateInterval);
 	void update();

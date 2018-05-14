@@ -1,9 +1,9 @@
 #include "victim.hpp"
 
 victim::victim(window & w, const vector & start, const vector & end,
-               int dissapearStepSize):
+               int disapearStepSize):
 	rectangle(w, start, end),
-	dissapearStepSize(dissapearStepSize),
+	disapearStepSize(disapearStepSize),
 	isTouched(false)
 {}
 
@@ -14,18 +14,18 @@ void victim::update() {
 			return;
 		}
 
-		if(size.x <= dissapearStepSize) {
+		if(size.x <= disapearStepSize) {
 			size.x = 0;
 		} else {
-			size.x -= dissapearStepSize;
-			location.x += dissapearStepSize/2;
+			size.x -= disapearStepSize;
+			location.x += disapearStepSize/2;
 		}
 
-		if(size.y <= dissapearStepSize) {
+		if(size.y <= disapearStepSize) {
 			size.y = 0;
 		} else {
-			size.y -= dissapearStepSize;
-			location.y += dissapearStepSize/2;
+			size.y -= disapearStepSize;
+			location.y += disapearStepSize/2;
 		}
 		rectangle::update();
 	}

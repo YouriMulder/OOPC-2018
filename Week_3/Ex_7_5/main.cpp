@@ -35,14 +35,14 @@ int main() {
 	          vector(windowStart + wallWidth, usableWindowHeight),
 	          fillToggleInterval, bounceVertical);
 
-	int victimWidth = 4;
-	int victimHeight = 8;
+	//int victimWidth = 4;
+	//int victimHeight = 8;
 
 	victim testVictim(w,
-	                  vector(windowWidth/2 - victimWidth/2,
-	                         windowHeight/2 - victimHeight/2),
-	                  vector(windowWidth/2 + victimWidth/2,
-	                         windowHeight/2 + victimHeight/2), 2);
+	                  vector(windowWidth - 20,
+	                         windowHeight - 20),
+	                  vector(windowWidth - 10,
+	                         windowHeight - 10), 2);
 
 	ball b(w, vector(50, 20), 9, vector(5, 2));
 
