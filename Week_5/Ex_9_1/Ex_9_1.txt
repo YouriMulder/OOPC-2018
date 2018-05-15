@@ -1,0 +1,17 @@
+Hoeveel GPIO pinnen heb je nodig om 3 SPI peripherals (met zowel input als output) aan te sluiten? 
+Maak een lijstje van de functies van deze GPIO’s.
+
+	1 SCLK
+	  - Geef een clock signaal vanuit de master (Dit kan rising of falling edge zijn. 
+						     Om te weten welke je moet gebruiken Bekijk Datasheet!)
+	1 MOSI 		(Master Output Slave Input)
+	  - Over deze lijn wordt data van de master naar de slave gestuurd
+	1 MISO 		(Master Input Slave Output)
+	  - Over deze lijn wordt data van de slave naar de master gestuurd
+	3 Slave Select 	(Elk device eentje) (Er zijn chips die daisy chained zijn, maar daar ga ik nu niet vanuit!)
+	  - Deze lijn is active low. Dus zal de geselecteerde chip een laag signaal ontvangen.
+	Totaal 6 GPIO pins
+
+Wat is de functie van de Q7’ output pin van een 74HC595 chip?
+	
+	niet geïnviteerde seriele data uitgang. 

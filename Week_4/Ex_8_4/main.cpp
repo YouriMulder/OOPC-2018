@@ -22,6 +22,7 @@ int main( void ){
 		if(!stillPressed) {
 			led::increaseDecreasePort(leds, buttonIncrease, buttonDecrease);
 		}
-		stillPressed = !(buttonDecrease.get() && buttonIncrease.get()); 
+		stillPressed = !(buttonDecrease.get() && buttonIncrease.get());
+		hwlib::wait_ms(1);
 	}
 }
