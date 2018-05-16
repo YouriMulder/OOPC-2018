@@ -1,5 +1,5 @@
-#ifndef led_HPP
-#define led_HPP
+#ifndef LED_HPP
+#define LED_HPP
 
 #include "hwlib.hpp"
 
