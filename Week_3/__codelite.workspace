@@ -6,13 +6,13 @@
       <Project Name="Ex_7_3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="Ex_7_4" Path="Ex_7_4/_codelite.project" Active="Yes"/>
+  <Project Name="Ex_7_4" Path="Ex_7_4/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Ex_7_4" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="Ex_7_5" Path="Ex_7_5/_codelite.project" Active="No"/>
+  <Project Name="Ex_7_5" Path="Ex_7_5/_codelite.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Ex_7_5" ConfigName="Release"/>
