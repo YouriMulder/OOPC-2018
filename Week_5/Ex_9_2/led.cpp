@@ -33,7 +33,7 @@ namespace led {
 		unsigned int amountOfLeds = leds.number_of_pins();
 		
 		for(;;) {			
-			ledValue += (ledValue < amountOfLeds && increasePreviousState != increasePin.get() && !increasePin.get());
+			ledValue += (ledValue < leds.number_of_pins() && increasePreviousState != increasePin.get() && !increasePin.get());
 			ledValue -= (ledValue > 0 && !decreasePin.get() && decreasePreviousState != decreasePin.get() && !decreasePin.get());
 			
 			leds.set(intToBits(ledValue));

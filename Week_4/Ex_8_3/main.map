@@ -97,8 +97,6 @@ Discarded input sections
                 0x00000000        0x2 hwlib.o
  .text._ZN5hwlib19_pin_in_dummy_class3getENS_9bufferingE
                 0x00000000        0x4 hwlib.o
- .text._ZN5hwlib20_pin_out_dummy_class3setEbNS_9bufferingE
-                0x00000000        0x2 hwlib.o
  .text._ZN5hwlib19_pin_oc_dummy_class3setEbNS_9bufferingE
                 0x00000000        0x2 hwlib.o
  .text._ZN5hwlib19_pin_oc_dummy_class3getENS_9bufferingE
@@ -187,8 +185,6 @@ Discarded input sections
                 0x00000000       0x20 hwlib.o
  .rodata._ZTVN5hwlib19_pin_in_dummy_classE
                 0x00000000       0x10 hwlib.o
- .rodata._ZTVN5hwlib20_pin_out_dummy_classE
-                0x00000000       0x10 hwlib.o
  .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
                 0x00000000       0x18 hwlib.o
  .rodata._ZTVN5hwlib9image_8x8E
@@ -212,8 +208,6 @@ Discarded input sections
  .data._ZN5hwlib12pin_in_dummyE
                 0x00000000        0x4 hwlib.o
  .data._ZN5hwlib12pin_oc_dummyE
-                0x00000000        0x4 hwlib.o
- .data._ZN5hwlib13pin_out_dummyE
                 0x00000000        0x4 hwlib.o
  .data._ZN5hwlib15font_16x16_dataE
                 0x00000000      0xbe4 hwlib.o
@@ -241,6 +235,10 @@ Discarded input sections
                 0x00000000       0x70 hwlib.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
                 0x00000000       0xa4 hwlib.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
@@ -355,7 +353,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000      0x740
+.text           0x00000000      0x7a0
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -381,27 +379,42 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
  .text._ZN3due9now_ticksEv
                 0x0000010c       0x74 led.o
                 0x0000010c                _ZN3due9now_ticksEv
- .text._ZN3led13doubleLedKittEPPN3due7pin_outEjj
-                0x00000180       0x9c led.o
-                0x00000180                _ZN3led13doubleLedKittEPPN3due7pin_outEjj
+ .text._ZN3led9doubleLedERN5hwlib18port_out_from_pinsEjj
+                0x00000180       0x2a led.o
+                0x00000180                _ZN3led9doubleLedERN5hwlib18port_out_from_pinsEjj
+ .text._ZN3led10doubleKittERN5hwlib18port_out_from_pinsEj
+                0x000001aa       0x40 led.o
+                0x000001aa                _ZN3led10doubleKittERN5hwlib18port_out_from_pinsEj
  .text._ZN5hwlib7pin_out5flushEv
-                0x0000021c        0x2 hwlib.o
-                0x0000021c                _ZN5hwlib7pin_out5flushEv
+                0x000001ea        0x2 hwlib.o
+                0x000001ea                _ZN5hwlib7pin_out5flushEv
+ .text._ZN5hwlib20_pin_out_dummy_class3setEbNS_9bufferingE
+                0x000001ec        0x2 hwlib.o
+                0x000001ec                _ZN5hwlib20_pin_out_dummy_class3setEbNS_9bufferingE
  .text._ZN5hwlib5panicEPKcj
-                0x0000021e        0x2 hwlib.o
-                0x0000021e                _ZN5hwlib5panicEPKcj
+                0x000001ee        0x2 hwlib.o
+                0x000001ee                _ZN5hwlib5panicEPKcj
  .text._ZN5hwlib6now_usEv
-                0x00000220       0x1c hwlib.o
-                0x00000220                _ZN5hwlib6now_usEv
+                0x000001f0       0x1c hwlib.o
+                0x000001f0                _ZN5hwlib6now_usEv
  .text._ZN5hwlib12wait_us_busyEi
-                0x0000023c       0x1c hwlib.o
-                0x0000023c                _ZN5hwlib12wait_us_busyEi
+                0x0000020c       0x1c hwlib.o
+                0x0000020c                _ZN5hwlib12wait_us_busyEi
  .text._ZN5hwlib7wait_usEi
-                0x00000258        0x4 hwlib.o
-                0x00000258                _ZN5hwlib7wait_usEi
+                0x00000228        0x4 hwlib.o
+                0x00000228                _ZN5hwlib7wait_usEi
  .text._ZN5hwlib7wait_msEi
-                0x0000025c       0x16 hwlib.o
-                0x0000025c                _ZN5hwlib7wait_msEi
+                0x0000022c       0x16 hwlib.o
+                0x0000022c                _ZN5hwlib7wait_msEi
+ .text._ZN5hwlib8port_out5flushEv
+                0x00000242        0x2 main.o
+                0x00000242                _ZN5hwlib8port_out5flushEv
+ .text._ZN5hwlib18port_out_from_pins14number_of_pinsEv
+                0x00000244        0x4 main.o
+                0x00000244                _ZN5hwlib18port_out_from_pins14number_of_pinsEv
+ .text._ZN5hwlib18port_out_from_pins3setEjNS_9bufferingE
+                0x00000248       0x2a main.o
+                0x00000248                _ZN5hwlib18port_out_from_pins3setEjNS_9bufferingE
  .text._ZN3due7pin_out3setEbN5hwlib9bufferingE
                 0x00000272        0xe main.o
                 0x00000272                _ZN3due7pin_out3setEbN5hwlib9bufferingE
@@ -410,69 +423,75 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 0x00000280                _ZN3due7pin_outC2ENS_4pinsE
                 0x00000280                _ZN3due7pin_outC1ENS_4pinsE
  .text.startup.main
-                0x000002b4       0x58 main.o
+                0x000002b4       0x94 main.o
                 0x000002b4                main
  .text.__startup
-                0x0000030c       0x48 bmptk_cortex.o
-                0x0000030c                __startup
- .text          0x00000354       0x30 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_aeabi_uldivmod.o)
-                0x00000354                __aeabi_uldivmod
- .text          0x00000384      0x2d0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
-                0x00000384                __udivmoddi4
- .text          0x00000654        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_dvmd_tls.o)
-                0x00000654                __aeabi_ldiv0
-                0x00000658                . = ALIGN (0x4)
+                0x00000348       0x48 bmptk_cortex.o
+                0x00000348                __startup
+ .text          0x00000390       0x30 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_aeabi_uldivmod.o)
+                0x00000390                __aeabi_uldivmod
+ .text          0x000003c0      0x2d0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
+                0x000003c0                __udivmoddi4
+ .text          0x00000690        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_dvmd_tls.o)
+                0x00000690                __aeabi_ldiv0
+                0x00000694                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x00000658        0x0 linker stubs
- .glue_7t       0x00000658        0x0 linker stubs
-                0x00000658                . = ALIGN (0x4)
+ .glue_7        0x00000694        0x0 linker stubs
+ .glue_7t       0x00000694        0x0 linker stubs
+                0x00000694                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
-                0x00000658       0x33 led.o
+                0x00000694       0x33 led.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x0000068b       0xa4 led.o
- *fill*         0x0000072f        0x1 
+                0x000006c7       0xa4 led.o
+ *fill*         0x0000076b        0x1 
+ .rodata._ZTVN5hwlib20_pin_out_dummy_classE
+                0x0000076c       0x10 hwlib.o
+                0x0000076c                _ZTVN5hwlib20_pin_out_dummy_classE
+ .rodata._ZTVN5hwlib18port_out_from_pinsE
+                0x0000077c       0x14 main.o
+                0x0000077c                _ZTVN5hwlib18port_out_from_pinsE
  .rodata._ZTVN3due7pin_outE
-                0x00000730       0x10 main.o
-                0x00000730                _ZTVN3due7pin_outE
-                0x00000740                . = ALIGN (0x4)
+                0x00000790       0x10 main.o
+                0x00000790                _ZTVN3due7pin_outE
+                0x000007a0                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000740                . = ALIGN (0x4)
+                0x000007a0                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x00000740                . = ALIGN (0x4)
+                0x000007a0                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x00000740                . = ALIGN (0x4)
+                0x000007a0                . = ALIGN (0x4)
  *(.eh_frame)
-                0x00000740                . = ALIGN (0x4)
-                0x00000740                __text_end = .
+                0x000007a0                . = ALIGN (0x4)
+                0x000007a0                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x00000740        0x0
- .vfp11_veneer  0x00000740        0x0 linker stubs
+.vfp11_veneer   0x000007a0        0x0
+ .vfp11_veneer  0x000007a0        0x0 linker stubs
 
-.v4_bx          0x00000740        0x0
- .v4_bx         0x00000740        0x0 linker stubs
+.v4_bx          0x000007a0        0x0
+ .v4_bx         0x000007a0        0x0 linker stubs
 
-.iplt           0x00000740        0x0
- .iplt          0x00000740        0x0 led.o
+.iplt           0x000007a0        0x0
+ .iplt          0x000007a0        0x0 led.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x00000740                . = ALIGN (0x4)
-                0x00000740                __exidx_start = .
+                0x000007a0                . = ALIGN (0x4)
+                0x000007a0                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
-.ARM.exidx      0x00000740        0x8
+.ARM.exidx      0x000007a0        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00000740        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000007a0        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x00000748        0x0
- .rel.iplt      0x00000748        0x0 led.o
-                0x00000748                . = ALIGN (0x4)
-                0x00000748                __exidx_end = .
+.rel.dyn        0x000007a8        0x0
+ .rel.iplt      0x000007a8        0x0 led.o
+                0x000007a8                . = ALIGN (0x4)
+                0x000007a8                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
 .bss            0x20000000    0x12010
@@ -507,9 +526,9 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 0x20012010                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20012010        0x4 load address 0x00000748
+.data           0x20012010        0x8 load address 0x000007a8
                 0x20012010                . = ALIGN (0x4)
-                0x00000748                __data_init_start = LOADADDR (.data)
+                0x000007a8                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
                 0x20012010                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
@@ -518,21 +537,24 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
  .data._ZN6sam3xa15SystemCoreClockE
                 0x20012010        0x4 led.o
                 0x20012010                _ZN6sam3xa15SystemCoreClockE
-                0x20012014                . = ALIGN (0x4)
-                0x20012014                __data_end = .
+ .data._ZN5hwlib13pin_out_dummyE
+                0x20012014        0x4 hwlib.o
+                0x20012014                _ZN5hwlib13pin_out_dummyE
+                0x20012018                . = ALIGN (0x4)
+                0x20012018                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x00000748                __data_init_end = LOADADDR (.data)
+                0x000007a8                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
-                0x00000004                PROVIDE (__data_size, (__data_end - __data_start))
-                0x00000004                PROVIDE (__data_init_size, __data_size)
+                0x00000008                PROVIDE (__data_size, (__data_end - __data_start))
+                0x00000008                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x20012014        0x0 load address 0x0000074c
- .igot.plt      0x20012014        0x0 led.o
-                0x20012014                . = ALIGN (0x4)
-                0x20012014                __heap_start = .
+.igot.plt       0x20012018        0x0 load address 0x000007b0
+ .igot.plt      0x20012018        0x0 led.o
+                0x20012018                . = ALIGN (0x4)
+                0x20012018                __heap_start = .
                 [!provide]                PROVIDE (__heap_start, __heap_start)
-                0x20012014                . = ALIGN (0x4)
+                0x20012018                . = ALIGN (0x4)
                 0x20018000                __heap_end = __ram_end
                 [!provide]                PROVIDE (__heap_end, __heap_end)
 
