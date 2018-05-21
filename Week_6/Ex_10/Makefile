@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES :=
+SOURCES := vector.cpp line.cpp branch.cpp tree.cpp
 
 # header files in this project
-HEADERS :=
+HEADERS := vector.hpp line.hpp branch.hpp tree.hpp
 
 # other places to look for files for this project
 SEARCH  := 

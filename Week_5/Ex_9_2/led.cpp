@@ -30,7 +30,6 @@ namespace led {
 	void increaseDecreasePort(hwlib::port_out_from_pins& leds, hwlib::pin_in& increasePin, hwlib::pin_in& decreasePin) {
 		unsigned int ledValue = 0;
 		bool increasePreviousState, decreasePreviousState = false;
-		unsigned int amountOfLeds = leds.number_of_pins();
 		
 		for(;;) {			
 			ledValue += (ledValue < leds.number_of_pins() && increasePreviousState != increasePin.get() && !increasePin.get());
@@ -42,7 +41,6 @@ namespace led {
 			decreasePreviousState = decreasePin.get();
 			hwlib::wait_ms(100);
 		}
-		
 	}
 	
 }
