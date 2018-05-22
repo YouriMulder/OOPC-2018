@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="F:\Programming\C++\OOPC-2018\Week_5\__codelite.workspace">
-  <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="F:\Programming\C++\OOPC-2018\Week_5\__codelite.workspace" Name="m_workspaceName"/>
+<Session Name="D:\School\Blok_D\CPP_OOP\Exercises\Week_5\__codelite.workspace">
+  <int Value="1" Name="m_selectedTab"/>
+  <wxString Value="D:\School\Blok_D\CPP_OOP\Exercises\Week_5\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="F:\Programming\C++\OOPC-2018\Week_5\Ex_9_2\led.cpp" Name="FileName"/>
-      <int Value="6" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
+      <wxString Value="D:\School\Blok_D\CPP_OOP\Exercises\Week_5\Ex_9_3\pin-in-and.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\School\Blok_D\CPP_OOP\Exercises\Week_5\Ex_9_3\pin-in-and.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

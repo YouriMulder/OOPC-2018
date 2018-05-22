@@ -1,8 +1,9 @@
 #include "branch.hpp"
 
-branch::branch(const vector& start, int length, int angle):
-	line(start, start.calculateEndVector(length, angle)), length(length), angle(angle)
-{}
+branch::branch(const vector& start, int length, int angle, int branchDepth):
+	line(start, start.calculateEndVector(length, angle)), length(length),
+	angle(angle), gotChilds(false) {
+}
 
 
 void branch::update() {
@@ -14,6 +15,3 @@ void branch::update() {
 	}
 	end = start.calculateEndVector(length, angle);
 }
-
-
-

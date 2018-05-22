@@ -10,13 +10,13 @@ class line {
 public:
 	vector start;
 	vector end;
-	
+
 private:
-	static void swap( int_fast16_t & a, int_fast16_t & b );
+	static void swap(int_fast16_t & a, int_fast16_t & b);
 public:
 	line(vector start, vector end);
 
-	void draw(hwlib::window& w);	
+	void draw(hwlib::window& w);
 };
 
 #endif // LINE_HPP

@@ -138,6 +138,8 @@ Discarded input sections
                 0x00000000        0x4 tree.o
  .text._ZN5hwlib9uart_getcEv
                 0x00000000        0x4 tree.o
+ .text._ZN4tree11addNewLayerEv
+                0x00000000        0x2 tree.o
  .bss._ZZN3due9now_ticksEvE4high
                 0x00000000        0x8 tree.o
  .bss._ZZN3due9now_ticksEvE8last_low
@@ -510,7 +512,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000     0x2fd0
+.text           0x00000000     0x3008
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -564,256 +566,255 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
  .text._ZN4line4drawERN5hwlib6windowE
                 0x00000390       0xfc line.o
                 0x00000390                _ZN4line4drawERN5hwlib6windowE
- .text._ZN6branchC2ERK6vectorii
+ .text._ZN6branchC2ERK6vectoriii
                 0x0000048c       0x38 branch.o
-                0x0000048c                _ZN6branchC1ERK6vectorii
-                0x0000048c                _ZN6branchC2ERK6vectorii
+                0x0000048c                _ZN6branchC1ERK6vectoriii
+                0x0000048c                _ZN6branchC2ERK6vectoriii
  .text._ZN4treeC2ERK6vectorii
-                0x000004c4       0x26 tree.o
+                0x000004c4       0x6c tree.o
                 0x000004c4                _ZN4treeC1ERK6vectorii
                 0x000004c4                _ZN4treeC2ERK6vectorii
  .text._ZN5hwlib6pin_oc7refreshEv
-                0x000004ea        0x2 hwlib.o
-                0x000004ea                _ZN5hwlib6pin_oc7refreshEv
+                0x00000530        0x2 hwlib.o
+                0x00000530                _ZN5hwlib6pin_oc7refreshEv
  .text._ZN5hwlib6pin_oc5flushEv
-                0x000004ec        0x2 hwlib.o
-                0x000004ec                _ZN5hwlib6pin_oc5flushEv
+                0x00000532        0x2 hwlib.o
+                0x00000532                _ZN5hwlib6pin_oc5flushEv
  .text._ZN5hwlib7ostream5flushEv
-                0x000004ee        0x2 hwlib.o
-                0x000004ee                _ZN5hwlib7ostream5flushEv
+                0x00000534        0x2 hwlib.o
+                0x00000534                _ZN5hwlib7ostream5flushEv
  .text._ZN5hwlib5panicEPKcj
-                0x000004f0        0x2 hwlib.o
-                0x000004f0                _ZN5hwlib5panicEPKcj
- *fill*         0x000004f2        0x2 
+                0x00000536        0x2 hwlib.o
+                0x00000536                _ZN5hwlib5panicEPKcj
  .text._ZN3due9uart_initEv
-                0x000004f4       0x60 hwlib.o
-                0x000004f4                _ZN3due9uart_initEv
+                0x00000538       0x60 hwlib.o
+                0x00000538                _ZN3due9uart_initEv
  .text._ZN3due9uart_putcEc
-                0x00000554       0x1c hwlib.o
-                0x00000554                _ZN3due9uart_putcEc
+                0x00000598       0x1c hwlib.o
+                0x00000598                _ZN3due9uart_putcEc
  .text._ZN5hwlib20cout_using_uart_putc4putcEc
-                0x00000570        0xa hwlib.o
-                0x00000570                _ZN5hwlib20cout_using_uart_putc4putcEc
+                0x000005b4        0xa hwlib.o
+                0x000005b4                _ZN5hwlib20cout_using_uart_putc4putcEc
  .text._ZN5hwlib6now_usEv
-                0x0000057a       0x1c hwlib.o
-                0x0000057a                _ZN5hwlib6now_usEv
+                0x000005be       0x1c hwlib.o
+                0x000005be                _ZN5hwlib6now_usEv
  .text._ZN5hwlib12wait_us_busyEi
-                0x00000596       0x1c hwlib.o
-                0x00000596                _ZN5hwlib12wait_us_busyEi
+                0x000005da       0x1c hwlib.o
+                0x000005da                _ZN5hwlib12wait_us_busyEi
  .text._ZN5hwlib7wait_usEi
-                0x000005b2        0x4 hwlib.o
-                0x000005b2                _ZN5hwlib7wait_usEi
+                0x000005f6        0x4 hwlib.o
+                0x000005f6                _ZN5hwlib7wait_usEi
  .text._ZN5hwlib7wait_msEi
-                0x000005b6       0x16 hwlib.o
-                0x000005b6                _ZN5hwlib7wait_msEi
+                0x000005fa       0x16 hwlib.o
+                0x000005fa                _ZN5hwlib7wait_msEi
  .text._ZN5hwlib6window5clearENS_9bufferingE
-                0x000005cc       0x6c main.o
-                0x000005cc                _ZN5hwlib6window5clearENS_9bufferingE
+                0x00000610       0x6c main.o
+                0x00000610                _ZN5hwlib6window5clearENS_9bufferingE
  .text._ZN3due6pin_oc3getEN5hwlib9bufferingE
-                0x00000638       0x10 main.o
-                0x00000638                _ZN3due6pin_oc3getEN5hwlib9bufferingE
+                0x0000067c       0x10 main.o
+                0x0000067c                _ZN3due6pin_oc3getEN5hwlib9bufferingE
  .text._ZN3due6pin_oc3setEbN5hwlib9bufferingE
-                0x00000648       0x10 main.o
-                0x00000648                _ZN3due6pin_oc3setEbN5hwlib9bufferingE
+                0x0000068c       0x10 main.o
+                0x0000068c                _ZN3due6pin_oc3setEbN5hwlib9bufferingE
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda16wait_half_periodEv.isra.0
-                0x00000658        0x6 main.o
+                0x0000069c        0x6 main.o
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda9write_bitEb
-                0x0000065e       0x36 main.o
-                0x0000065e                _ZN5hwlib26i2c_bus_bit_banged_scl_sda9write_bitEb
+                0x000006a2       0x36 main.o
+                0x000006a2                _ZN5hwlib26i2c_bus_bit_banged_scl_sda9write_bitEb
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda8read_bitEv
-                0x00000694       0x44 main.o
-                0x00000694                _ZN5hwlib26i2c_bus_bit_banged_scl_sda8read_bitEv
+                0x000006d8       0x44 main.o
+                0x000006d8                _ZN5hwlib26i2c_bus_bit_banged_scl_sda8read_bitEv
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda11write_startEv
-                0x000006d8       0x28 main.o
-                0x000006d8                _ZN5hwlib26i2c_bus_bit_banged_scl_sda11write_startEv
+                0x0000071c       0x28 main.o
+                0x0000071c                _ZN5hwlib26i2c_bus_bit_banged_scl_sda11write_startEv
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_stopEv
-                0x00000700       0x48 main.o
-                0x00000700                _ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_stopEv
+                0x00000744       0x48 main.o
+                0x00000744                _ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_stopEv
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_byteEj
-                0x00000748       0x1c main.o
-                0x00000748                _ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_byteEj
+                0x0000078c       0x1c main.o
+                0x0000078c                _ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_byteEj
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda5writeEjPKhj
-                0x00000764       0x3a main.o
-                0x00000764                _ZN5hwlib26i2c_bus_bit_banged_scl_sda5writeEjPKhj
+                0x000007a8       0x3a main.o
+                0x000007a8                _ZN5hwlib26i2c_bus_bit_banged_scl_sda5writeEjPKhj
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda4readEjPhj
-                0x0000079e       0x60 main.o
-                0x0000079e                _ZN5hwlib26i2c_bus_bit_banged_scl_sda4readEjPhj
+                0x000007e2       0x60 main.o
+                0x000007e2                _ZN5hwlib26i2c_bus_bit_banged_scl_sda4readEjPhj
  .text._ZN5hwlib9glcd_oled7commandEjjj
-                0x000007fe       0x30 main.o
-                0x000007fe                _ZN5hwlib9glcd_oled7commandEjjj
+                0x00000842       0x30 main.o
+                0x00000842                _ZN5hwlib9glcd_oled7commandEjjj
  .text._ZN5hwlib9glcd_oled5flushEv
-                0x0000082e       0x32 main.o
-                0x0000082e                _ZN5hwlib9glcd_oled5flushEv
+                0x00000872       0x32 main.o
+                0x00000872                _ZN5hwlib9glcd_oled5flushEv
  .text._ZN5hwlib9glcd_oled20write_implementationENS_8locationENS_5colorENS_9bufferingE
-                0x00000860       0xce main.o
-                0x00000860                _ZN5hwlib9glcd_oled20write_implementationENS_8locationENS_5colorENS_9bufferingE
- *fill*         0x0000092e        0x2 
+                0x000008a4       0xce main.o
+                0x000008a4                _ZN5hwlib9glcd_oled20write_implementationENS_8locationENS_5colorENS_9bufferingE
+ *fill*         0x00000972        0x2 
  .text._ZN3due6pin_ocC2ENS_4pinsE
-                0x00000930       0x34 main.o
-                0x00000930                _ZN3due6pin_ocC2ENS_4pinsE
-                0x00000930                _ZN3due6pin_ocC1ENS_4pinsE
+                0x00000974       0x34 main.o
+                0x00000974                _ZN3due6pin_ocC2ENS_4pinsE
+                0x00000974                _ZN3due6pin_ocC1ENS_4pinsE
  .text.startup.main
-                0x00000964       0xc8 main.o
-                0x00000964                main
+                0x000009a8       0xbc main.o
+                0x000009a8                main
  .text.__startup
-                0x00000a2c       0x48 bmptk_cortex.o
-                0x00000a2c                __startup
- .text          0x00000a74       0x90 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_cos.o)
-                0x00000a74                cos
- .text          0x00000b04       0x90 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_sin.o)
-                0x00000b04                sin
- *fill*         0x00000b94        0x4 
- .text          0x00000b98      0x43c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-e_rem_pio2.o)
-                0x00000b98                __ieee754_rem_pio2
- *fill*         0x00000fd4        0x4 
- .text          0x00000fd8      0x248 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_cos.o)
-                0x00000fd8                __kernel_cos
- .text          0x00001220      0x850 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_rem_pio2.o)
-                0x00001220                __kernel_rem_pio2
- .text          0x00001a70      0x16c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_sin.o)
-                0x00001a70                __kernel_sin
- .text          0x00001bdc        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_fabs.o)
-                0x00001bdc                fabs
- *fill*         0x00001be4        0x4 
- .text          0x00001be8      0x108 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_floor.o)
-                0x00001be8                floor
- .text          0x00001cf0       0xe4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_scalbn.o)
-                0x00001cf0                scalbn
- .text          0x00001dd4       0x10 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_copysign.o)
-                0x00001dd4                copysign
- .text          0x00001de4      0x378 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_addsubdf3.o)
-                0x00001de4                __aeabi_drsub
-                0x00001dec                __aeabi_dsub
-                0x00001dec                __subdf3
-                0x00001df0                __aeabi_dadd
-                0x00001df0                __adddf3
-                0x00002068                __floatunsidf
-                0x00002068                __aeabi_ui2d
-                0x00002088                __floatsidf
-                0x00002088                __aeabi_i2d
-                0x000020ac                __aeabi_f2d
-                0x000020ac                __extendsfdf2
-                0x000020f0                __floatundidf
-                0x000020f0                __aeabi_ul2d
-                0x00002100                __floatdidf
-                0x00002100                __aeabi_l2d
- .text          0x0000215c      0x424 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_muldivdf3.o)
-                0x0000215c                __aeabi_dmul
-                0x0000215c                __muldf3
-                0x000023b0                __divdf3
-                0x000023b0                __aeabi_ddiv
- .text          0x00002580      0x110 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_cmpdf2.o)
-                0x00002580                __gtdf2
-                0x00002580                __gedf2
-                0x00002588                __ltdf2
-                0x00002588                __ledf2
-                0x00002590                __nedf2
-                0x00002590                __eqdf2
-                0x00002590                __cmpdf2
-                0x0000260c                __aeabi_cdrcmple
-                0x0000261c                __aeabi_cdcmpeq
-                0x0000261c                __aeabi_cdcmple
-                0x0000262c                __aeabi_dcmpeq
-                0x00002640                __aeabi_dcmplt
-                0x00002654                __aeabi_dcmple
-                0x00002668                __aeabi_dcmpge
-                0x0000267c                __aeabi_dcmpgt
- .text          0x00002690       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_fixdfsi.o)
-                0x00002690                __aeabi_d2iz
-                0x00002690                __fixdfsi
- .text          0x000026e0       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_truncdfsf2.o)
-                0x000026e0                __truncdfsf2
-                0x000026e0                __aeabi_d2f
- .text          0x00002780      0x21c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_addsubsf3.o)
-                0x00002780                __aeabi_frsub
-                0x00002788                __subsf3
-                0x00002788                __aeabi_fsub
-                0x0000278c                __aeabi_fadd
-                0x0000278c                __addsf3
-                0x000028ec                __aeabi_ui2f
-                0x000028ec                __floatunsisf
-                0x000028f4                __aeabi_i2f
-                0x000028f4                __floatsisf
-                0x00002910                __aeabi_ul2f
-                0x00002910                __floatundisf
-                0x00002920                __aeabi_l2f
-                0x00002920                __floatdisf
- .text          0x0000299c       0x30 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_aeabi_uldivmod.o)
-                0x0000299c                __aeabi_uldivmod
- .text          0x000029cc      0x2d0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
-                0x000029cc                __udivmoddi4
- .text          0x00002c9c        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_dvmd_tls.o)
-                0x00002c9c                __aeabi_ldiv0
-                0x00002ca0                . = ALIGN (0x4)
+                0x00000a64       0x48 bmptk_cortex.o
+                0x00000a64                __startup
+ .text          0x00000aac       0x90 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_cos.o)
+                0x00000aac                cos
+ .text          0x00000b3c       0x90 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_sin.o)
+                0x00000b3c                sin
+ *fill*         0x00000bcc        0x4 
+ .text          0x00000bd0      0x43c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-e_rem_pio2.o)
+                0x00000bd0                __ieee754_rem_pio2
+ *fill*         0x0000100c        0x4 
+ .text          0x00001010      0x248 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_cos.o)
+                0x00001010                __kernel_cos
+ .text          0x00001258      0x850 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_rem_pio2.o)
+                0x00001258                __kernel_rem_pio2
+ .text          0x00001aa8      0x16c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_sin.o)
+                0x00001aa8                __kernel_sin
+ .text          0x00001c14        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_fabs.o)
+                0x00001c14                fabs
+ *fill*         0x00001c1c        0x4 
+ .text          0x00001c20      0x108 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_floor.o)
+                0x00001c20                floor
+ .text          0x00001d28       0xe4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_scalbn.o)
+                0x00001d28                scalbn
+ .text          0x00001e0c       0x10 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-s_copysign.o)
+                0x00001e0c                copysign
+ .text          0x00001e1c      0x378 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_addsubdf3.o)
+                0x00001e1c                __aeabi_drsub
+                0x00001e24                __aeabi_dsub
+                0x00001e24                __subdf3
+                0x00001e28                __aeabi_dadd
+                0x00001e28                __adddf3
+                0x000020a0                __floatunsidf
+                0x000020a0                __aeabi_ui2d
+                0x000020c0                __floatsidf
+                0x000020c0                __aeabi_i2d
+                0x000020e4                __aeabi_f2d
+                0x000020e4                __extendsfdf2
+                0x00002128                __floatundidf
+                0x00002128                __aeabi_ul2d
+                0x00002138                __floatdidf
+                0x00002138                __aeabi_l2d
+ .text          0x00002194      0x424 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_muldivdf3.o)
+                0x00002194                __aeabi_dmul
+                0x00002194                __muldf3
+                0x000023e8                __divdf3
+                0x000023e8                __aeabi_ddiv
+ .text          0x000025b8      0x110 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_cmpdf2.o)
+                0x000025b8                __gtdf2
+                0x000025b8                __gedf2
+                0x000025c0                __ltdf2
+                0x000025c0                __ledf2
+                0x000025c8                __nedf2
+                0x000025c8                __eqdf2
+                0x000025c8                __cmpdf2
+                0x00002644                __aeabi_cdrcmple
+                0x00002654                __aeabi_cdcmpeq
+                0x00002654                __aeabi_cdcmple
+                0x00002664                __aeabi_dcmpeq
+                0x00002678                __aeabi_dcmplt
+                0x0000268c                __aeabi_dcmple
+                0x000026a0                __aeabi_dcmpge
+                0x000026b4                __aeabi_dcmpgt
+ .text          0x000026c8       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_fixdfsi.o)
+                0x000026c8                __aeabi_d2iz
+                0x000026c8                __fixdfsi
+ .text          0x00002718       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_truncdfsf2.o)
+                0x00002718                __truncdfsf2
+                0x00002718                __aeabi_d2f
+ .text          0x000027b8      0x21c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_arm_addsubsf3.o)
+                0x000027b8                __aeabi_frsub
+                0x000027c0                __subsf3
+                0x000027c0                __aeabi_fsub
+                0x000027c4                __aeabi_fadd
+                0x000027c4                __addsf3
+                0x00002924                __aeabi_ui2f
+                0x00002924                __floatunsisf
+                0x0000292c                __aeabi_i2f
+                0x0000292c                __floatsisf
+                0x00002948                __aeabi_ul2f
+                0x00002948                __floatundisf
+                0x00002958                __aeabi_l2f
+                0x00002958                __floatdisf
+ .text          0x000029d4       0x30 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_aeabi_uldivmod.o)
+                0x000029d4                __aeabi_uldivmod
+ .text          0x00002a04      0x2d0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
+                0x00002a04                __udivmoddi4
+ .text          0x00002cd4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_dvmd_tls.o)
+                0x00002cd4                __aeabi_ldiv0
+                0x00002cd8                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x00002ca0        0x0 linker stubs
- .glue_7t       0x00002ca0        0x0 linker stubs
-                0x00002ca0                . = ALIGN (0x4)
+ .glue_7        0x00002cd8        0x0 linker stubs
+ .glue_7t       0x00002cd8        0x0 linker stubs
+                0x00002cd8                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
-                0x00002ca0       0x33 line.o
+                0x00002cd8       0x33 line.o
  .rodata._ZN4line4drawERN5hwlib6windowE.str1.1
-                0x00002cd3        0x6 line.o
+                0x00002d0b        0x6 line.o
                                   0x8 (size before relaxing)
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x00002cd9       0xa4 line.o
- *fill*         0x00002d7d        0x3 
+                0x00002d11       0xa4 line.o
+ *fill*         0x00002db5        0x3 
  .rodata._ZTVN5hwlib20cout_using_uart_putcE
-                0x00002d80       0x10 hwlib.o
-                0x00002d80                _ZTVN5hwlib20cout_using_uart_putcE
+                0x00002db8       0x10 hwlib.o
+                0x00002db8                _ZTVN5hwlib20cout_using_uart_putcE
  .rodata._ZTVN5hwlib26i2c_bus_bit_banged_scl_sdaE
-                0x00002d90       0x10 main.o
-                0x00002d90                _ZTVN5hwlib26i2c_bus_bit_banged_scl_sdaE
+                0x00002dc8       0x10 main.o
+                0x00002dc8                _ZTVN5hwlib26i2c_bus_bit_banged_scl_sdaE
  .rodata._ZTVN5hwlib9glcd_oledE
-                0x00002da0       0x14 main.o
-                0x00002da0                _ZTVN5hwlib9glcd_oledE
+                0x00002dd8       0x14 main.o
+                0x00002dd8                _ZTVN5hwlib9glcd_oledE
  .rodata._ZTVN3due6pin_ocE
-                0x00002db4       0x18 main.o
-                0x00002db4                _ZTVN3due6pin_ocE
+                0x00002dec       0x18 main.o
+                0x00002dec                _ZTVN3due6pin_ocE
  .rodata._ZZN5hwlib9glcd_oledC4ERNS_7i2c_busEjE13init_sequence
-                0x00002dcc       0x29 main.o
-                0x00002dcc                _ZZN5hwlib9glcd_oledC4ERNS_7i2c_busEjE13init_sequence
- *fill*         0x00002df5        0x3 
- .rodata        0x00002df8      0x188 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-e_rem_pio2.o)
- .rodata        0x00002f80       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_rem_pio2.o)
-                0x00002fd0                . = ALIGN (0x4)
+                0x00002e04       0x29 main.o
+                0x00002e04                _ZZN5hwlib9glcd_oledC4ERNS_7i2c_busEjE13init_sequence
+ *fill*         0x00002e2d        0x3 
+ .rodata        0x00002e30      0x188 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-e_rem_pio2.o)
+ .rodata        0x00002fb8       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libm.a(lib_a-k_rem_pio2.o)
+                0x00003008                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002fd0                . = ALIGN (0x4)
+                0x00003008                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x00002fd0                . = ALIGN (0x4)
+                0x00003008                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x00002fd0                . = ALIGN (0x4)
+                0x00003008                . = ALIGN (0x4)
  *(.eh_frame)
-                0x00002fd0                . = ALIGN (0x4)
-                0x00002fd0                __text_end = .
+                0x00003008                . = ALIGN (0x4)
+                0x00003008                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x00002fd0        0x0
- .vfp11_veneer  0x00002fd0        0x0 linker stubs
+.vfp11_veneer   0x00003008        0x0
+ .vfp11_veneer  0x00003008        0x0 linker stubs
 
-.v4_bx          0x00002fd0        0x0
- .v4_bx         0x00002fd0        0x0 linker stubs
+.v4_bx          0x00003008        0x0
+ .v4_bx         0x00003008        0x0 linker stubs
 
-.iplt           0x00002fd0        0x0
- .iplt          0x00002fd0        0x0 vector.o
+.iplt           0x00003008        0x0
+ .iplt          0x00003008        0x0 vector.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x00002fd0                . = ALIGN (0x4)
-                0x00002fd0                __exidx_start = .
+                0x00003008                . = ALIGN (0x4)
+                0x00003008                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
-.ARM.exidx      0x00002fd0        0x8
+.ARM.exidx      0x00003008        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00002fd0        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00003008        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x00002fd8        0x0
- .rel.iplt      0x00002fd8        0x0 vector.o
-                0x00002fd8                . = ALIGN (0x4)
-                0x00002fd8                __exidx_end = .
+.rel.dyn        0x00003010        0x0
+ .rel.iplt      0x00003010        0x0 vector.o
+                0x00003010                . = ALIGN (0x4)
+                0x00003010                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
 .bss            0x20000000    0x12010
@@ -850,9 +851,9 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 0x20012010                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20012010       0x1c load address 0x00002fd8
+.data           0x20012010       0x1c load address 0x00003010
                 0x20012010                . = ALIGN (0x4)
-                0x00002fd8                __data_init_start = LOADADDR (.data)
+                0x00003010                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
                 0x20012010                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
@@ -870,13 +871,13 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/7.2.0/../../../../arm-eabi/lib/t
                 0x2001202c                . = ALIGN (0x4)
                 0x2001202c                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x00002fd8                __data_init_end = LOADADDR (.data)
+                0x00003010                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
                 0x0000001c                PROVIDE (__data_size, (__data_end - __data_start))
                 0x0000001c                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x2001202c        0x0 load address 0x00002ff4
+.igot.plt       0x2001202c        0x0 load address 0x0000302c
  .igot.plt      0x2001202c        0x0 vector.o
                 0x2001202c                . = ALIGN (0x4)
                 0x2001202c                __heap_start = .
