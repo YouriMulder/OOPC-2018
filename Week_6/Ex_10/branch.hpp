@@ -7,16 +7,15 @@
 
 class branch : public line {
 public:
+	static const int invalidLayer = -1;
 	int length;
 	float angle;
-	int branchDepth;
+	int layer;
 	bool gotChilds;
 
 public:
 	branch(const vector& start = vector(0,0), int length = 0, int angle = 0,
-	       int branchDepth = -1);
-	void update();
-
+	       int layer = invalidLayer);
 };
 
 #endif // BRANCH_HPP

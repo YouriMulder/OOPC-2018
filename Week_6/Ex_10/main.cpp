@@ -24,8 +24,7 @@ int main(void) {
 	tree root(start, radius, angleUp);
 
 	display.clear();
-
-	root.branches[0].draw(display);
-
-
+	
+	root.addNewLayers(5);
+	root.draw(display);
 }

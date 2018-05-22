@@ -1,17 +1,6 @@
 #include "branch.hpp"
 
-branch::branch(const vector& start, int length, int angle, int branchDepth):
+branch::branch(const vector& start, int length, int angle, int layer):
 	line(start, start.calculateEndVector(length, angle)), length(length),
-	angle(angle), gotChilds(false) {
-}
-
-
-void branch::update() {
-	char in;
-	hwlib::cin >> in;
-	if(in == 'w') {
-		angle += -3.14/4;
-
-	}
-	end = start.calculateEndVector(length, angle);
+	angle(angle), layer(layer), gotChilds(false) {
 }
