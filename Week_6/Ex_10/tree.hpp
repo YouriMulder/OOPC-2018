@@ -4,12 +4,13 @@
 #include "branch.hpp"
 #include <array>
 
-class tree {
+class tree : public branch {
 public:
-	tree(const vector& start, int length, int angle);
+	tree(const vector& start, int length, int angle, int angleOffset = 45,
+		float shrinkSize = 0.75);
+	int angleOffset;
+	float shrinkSize;
 
-	float shrinkSize = 0.80;
-	int angleOffset = 45;
 	static const int amountOfBranches = 100;
 	branch branches[amountOfBranches];
 
@@ -17,7 +18,7 @@ public:
 public:
 	int getHighestLayer();
 	int getFirstEmptyBranchIndex();
-	void addNewBranchChilds(const branch& parentBranch);
+	void addNewBranchChilds(branch& parentBranch);
 	void addNewLayer();
 	void addNewLayers(unsigned int amountOfNewLayers);
 	void draw(hwlib::window& w);

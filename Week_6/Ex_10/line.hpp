@@ -15,7 +15,6 @@ private:
 	static void swap(int_fast16_t & a, int_fast16_t & b);
 public:
 	line(vector start, vector end);
-
 	void draw(hwlib::window& w);
 };
 

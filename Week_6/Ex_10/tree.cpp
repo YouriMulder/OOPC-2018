@@ -1,10 +1,10 @@
 #include "tree.hpp"
 #include "hwlib.hpp"
 
-
-tree::tree(const vector& start, int length, int angle) {
-	branch root = branch(start, length, angle, 0);
-	branches[0] = root;
+tree::tree(const vector& start, int length, int angle, int angleOffset, float shrinkSize):
+	angleOffset(angleOffset), shrinkSize(shrinkSize)
+{
+	branches[0] = branch(start, length, angle, 0);;
 }
 
 int tree::getHighestLayer() {
@@ -28,23 +28,25 @@ int tree::getFirstEmptyBranchIndex() {
 	return -1;
 }
 
-void tree::addNewBranchChilds(const branch& parentBranch) {
+void tree::addNewBranchChilds(branch& parentBranch) {
 	int firstEmptyBranch = getFirstEmptyBranchIndex();
 	if(firstEmptyBranch != branch::invalidLayer) {
-		branches[firstEmptyBranch] = branch(parentBranch.end, parentBranch.length * shrinkSize, 
+		branches[firstEmptyBranch] = branch(parentBranch.end, parentBranch.length * shrinkSize,
 		parentBranch.angle - angleOffset, parentBranch.layer + 1);
+		parentBranch.gotChilds = true;
 	}
-	
+
 	firstEmptyBranch = getFirstEmptyBranchIndex();
 	if(firstEmptyBranch != branch::invalidLayer) {
-		branches[firstEmptyBranch] = branch(parentBranch.end, parentBranch.length * shrinkSize, 
+		branches[firstEmptyBranch] = branch(parentBranch.end, parentBranch.length * shrinkSize,
 		parentBranch.angle + angleOffset, parentBranch.layer + 1);
+		parentBranch.gotChilds = true;
 	}
 }
 
 void tree::addNewLayer() {
 	int currentHighestLayer = getHighestLayer();
-	for(const branch& b : branches) {
+	for(branch& b : branches) {
 		if(b.layer == currentHighestLayer) {
 			addNewBranchChilds(b);
 		}
