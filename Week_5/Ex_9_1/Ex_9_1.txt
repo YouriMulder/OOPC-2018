@@ -14,4 +14,6 @@ Maak een lijstje van de functies van deze GPIO’s.
 
 Wat is de functie van de Q7’ output pin van een 74HC595 chip?
 	
-	niet geïnviteerde seriele data uitgang. 
+	Niet geïnviteerde seriele data uitgang.
+	Deze lijn wordt vaak gebruikt om verschillende chips door te lussen als een schuif register.
+	

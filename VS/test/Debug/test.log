@@ -4,133 +4,156 @@
   This is free software; see the source for copying conditions.  There is NO
   warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
   
+  'Compiling C++ (.cpp) file: C:/ti-software/hwlib/library/hwlib.cpp'
+  "C:/SysGCC/arm-eabi/bin/arm-eabi-g++"   -mcpu=cortex-m3 -mthumb -fomit-frame-pointer -march=armv7-m -Wall -Werror -Wno-maybe-uninitialized  -Wno-unused-local-typedefs -Wno-unused-but-set-variable -Wno-unused-local-typedefs -Wno-unused-function -Wno-attributes -Os -fdata-sections -ffunction-sections  -IC:\Python36\include -IC:/ti-software/bmptk/targets/cortex/atmel  -IC:/ti-software/Catch2/single_include  -IC:/ti-software/hwlib/library  -IC:/ti-software/bmptk  -IC:/ti-software/bmptk/targets  -IC:/ti-software/bmptk/targets/cortex  -IC:/ti-software/bmptk/targets/cortex/cmsis  -DHWCPP_FAKE_OSTREAM  -DDONT_USE_CMSIS_INIT  -DBMPTK_INCLUDE_CHIP=sam.h  -D__SAM3X8E__  -DBMPTK_TARGET=arduino_due  -DBMPTK_TARGET_arduino_due -DHWCPP_TARGET_arduino_due -DBMPTK_CHIP=sam3x8e  -DBMPTK_CHIP_sam3x8e  -DBMPTK_XTAL=12000     -DBMPTK_BAUDRATE=2400  -DBMPTK_VERSION=V04_00_work_in_progress_2017_01_23  -DBMPTK_EMBEDDED  -std=c++14 -fno-rtti   -fno-exceptions -fno-asynchronous-unwind-tables -fno-threadsafe-statics  -fno-use-cxa-get-exception-ptr      -c -o hwlib.o C:/ti-software/hwlib/library/hwlib.cpp 
+  ' '
   'Compiling C++ (.cpp) file: main.cpp'
   "C:/SysGCC/arm-eabi/bin/arm-eabi-g++"   -mcpu=cortex-m3 -mthumb -fomit-frame-pointer -march=armv7-m -Wall -Werror -Wno-maybe-uninitialized  -Wno-unused-local-typedefs -Wno-unused-but-set-variable -Wno-unused-local-typedefs -Wno-unused-function -Wno-attributes -Os -fdata-sections -ffunction-sections  -IC:\Python36\include -IC:/ti-software/bmptk/targets/cortex/atmel  -IC:/ti-software/Catch2/single_include  -IC:/ti-software/hwlib/library  -IC:/ti-software/bmptk  -IC:/ti-software/bmptk/targets  -IC:/ti-software/bmptk/targets/cortex  -IC:/ti-software/bmptk/targets/cortex/cmsis  -DHWCPP_FAKE_OSTREAM  -DDONT_USE_CMSIS_INIT  -DBMPTK_INCLUDE_CHIP=sam.h  -D__SAM3X8E__  -DBMPTK_TARGET=arduino_due  -DBMPTK_TARGET_arduino_due -DHWCPP_TARGET_arduino_due -DBMPTK_CHIP=sam3x8e  -DBMPTK_CHIP_sam3x8e  -DBMPTK_XTAL=12000     -DBMPTK_BAUDRATE=2400  -DBMPTK_VERSION=V04_00_work_in_progress_2017_01_23  -DBMPTK_EMBEDDED  -std=c++14 -fno-rtti   -fno-exceptions -fno-asynchronous-unwind-tables -fno-threadsafe-statics  -fno-use-cxa-get-exception-ptr      -c -o main.o main.cpp 
   In file included from main.cpp:1:0:
-C:/ti-software/hwlib/library/hwlib-all.hpp(20,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-defines.hpp )
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(19,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
+   #include HWLIB_INCLUDE( hwlib-all.hpp )
             ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(21,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-panic.hpp )
+  In file included from main.cpp:1:0:
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(22,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
+   #include HWLIB_INCLUDE( hwlib-arduino-due-system-sam3xa.inc )
             ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(22,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-common.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(23,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-pin.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(24,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-pin-dummies.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(25,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-pin-decorators.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(26,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-port.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(27,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-port-from-pins.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(28,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-port-decorators.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(29,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-adc.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(30,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-dac.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(31,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-console.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(32,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-graphics.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(33,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-font-default-8x8.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(34,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-font-default-16x16.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(35,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-wait.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(36,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-ostream.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(37,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-i2c.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(38,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-pcf8574a.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(39,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-pcf8591.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(40,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-spi.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(41,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-hc595.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(42,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-hd44780.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(43,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-glcd-5510.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(44,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-glcd-oled.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(45,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-matrix-keypad.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(46,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-string.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-all.hpp(47,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-demo.hpp )
-            ^~~~~~~~~~~~~
-  In file included from main.cpp:13:0:
-C:/ti-software/hwlib/library/hwlib-console.hpp(19,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-ostream.hpp )
-            ^~~~~~~~~~~~~
-  In file included from main.cpp:23:0:
-C:/ti-software/hwlib/library/hwlib-glcd-5510.hpp(19,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-graphics.hpp )
-            ^~~~~~~~~~~~~
-  In file included from main.cpp:24:0:
-C:/ti-software/hwlib/library/hwlib-glcd-oled.hpp(19,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-graphics.hpp )
-            ^~~~~~~~~~~~~
-C:/ti-software/hwlib/library/hwlib-glcd-oled.hpp(20,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include HWLIB_INCLUDE( hwlib-i2c.hpp )
-            ^~~~~~~~~~~~~
-main.cpp(27,10): error GA5ECD099: missing terminating " character [-Werror]
-   #include "hwlib-demo.hpp'
-            ^
-main.cpp(27,10): error G95D22A53: #include expects "FILENAME" or <FILENAME>
-   #include "hwlib-demo.hpp'
-            ^~~~~~~~~~~~~~~~
-  main.cpp: In function 'int main()':
-main.cpp(31,2): error G43616FCF: 'WDT' was not declared in this scope
-    WDT->WDT_MR = WDT_MR_WDDIS;
-    ^~~
-main.cpp(31,16): error G5A052A9E: 'WDT_MR_WDDIS' was not declared in this scope
-    WDT->WDT_MR = WDT_MR_WDDIS;
-                  ^~~~~~~~~~~~
-main.cpp(33,20): error GB5390141: 'hwlib::target' has not been declared
-    auto scl = hwlib::target::pin_oc(hwlib::target::pins::scl1);
-                      ^~~~~~
-main.cpp(33,42): error GB5390141: 'hwlib::target' has not been declared
-    auto scl = hwlib::target::pin_oc(hwlib::target::pins::scl1);
-                                            ^~~~~~
-main.cpp(34,20): error GB5390141: 'hwlib::target' has not been declared
-    auto sda = hwlib::target::pin_oc(hwlib::target::pins::sda1);
-                      ^~~~~~
-main.cpp(34,42): error GB5390141: 'hwlib::target' has not been declared
-    auto sda = hwlib::target::pin_oc(hwlib::target::pins::sda1);
-                                            ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(90,7): error GDCE83DE2: 'HWLIB_WEAK' does not name a type
+   const HWLIB_WEAK pin_info_type & pin_info( pins name ){
+         ^~~~~~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(216,7): error GDCE83DE2: 'HWLIB_WEAK' does not name a type
+   const HWLIB_WEAK ad_pin_info_type & ad_pin_info( ad_pins name ){
+         ^~~~~~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(245,7): error GDCE83DE2: 'HWLIB_WEAK' does not name a type
+   const HWLIB_WEAK ad_seq_type & ad_seq_info( uint32_t channel ){
+         ^~~~~~~~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'Pio& due::port_registers(uint32_t)':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(289,4): error GA74722B3: 'HWLIB_PANIC_WITH_LOCATION' was not declared in this scope
+      HWLIB_PANIC_WITH_LOCATION;
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: At global scope:
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(295,23): error GA3F261DE: 'hwlib' has not been declared
+   class pin_in : public hwlib::pin_in {
+                         ^~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(295,30): error GC66A3811: expected '{' before 'pin_in'
+   class pin_in : public hwlib::pin_in {
+                                ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(296,1): error GFD5528CD: expected primary-expression before 'private'
+   private:
+   ^~~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(296,1): error GC66A3811: expected '}' before 'private'
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(300,1): error G49BDF932: expected unqualified-id before 'public'
+   public:
+   ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(313,44): error G49BDF932: expected unqualified-id before ',' token
+         port{ port_registers( port_number ) },
+                                              ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(314,11): error G43F697D6: expected constructor, destructor, or type conversion before '{' token
+         mask{ 0x1U << pin_number }
+             ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(315,4): error G49BDF932: expected unqualified-id before '{' token
+      {
+      ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(326,22): error G53EF1542: ISO C++ forbids declaration of 'pin_in' with no type [-fpermissive]
+      pin_in( pins name ):
+                        ^
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'int due::pin_in(due::pins)':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(326,22): error GD96B799C: 'int due::pin_in(due::pins)' redeclared as different kind of symbol
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:295:30: note: previous declaration 'int due::pin_in'
+   class pin_in : public hwlib::pin_in {
+                                ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(327,7): error G282A6AB9: only constructors take member initializers
+         pin_in{
+         ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(328,10): error G5F8D92C1: 'pin_info' was not declared in this scope
+            pin_info( name ).port,
+            ^~~~~~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:328:10: note: suggested alternative: 'pin_in'
+            pin_info( name ).port,
+            ^~~~~~~~
+            pin_in
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(329,10): error G5F8D92C1: 'pin_info' was not declared in this scope
+            pin_info( name ).pin
+            ^~~~~~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:329:10: note: suggested alternative: 'pin_in'
+            pin_info( name ).pin
+            ^~~~~~~~
+            pin_in
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(331,5): error GA6EE5B3D: no return statement in function returning non-void [-Werror=return-type]
+      {}
+       ^
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'void due::pullup_disable()':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(335,7): error G484219E0: 'port' was not declared in this scope
+         port.PIO_PUDR = mask;
+         ^~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:335:7: note: suggested alternative: 'Uart'
+         port.PIO_PUDR = mask;
+         ^~~~
+         Uart
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'void due::pullup_enable()':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(340,7): error G484219E0: 'port' was not declared in this scope
+         port.PIO_PUER = mask;
+         ^~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:340:7: note: suggested alternative: 'Uart'
+         port.PIO_PUER = mask;
+         ^~~~
+         Uart
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: At global scope:
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(344,7): error GA3F261DE: 'hwlib' has not been declared
+         hwlib::buffering buf = hwlib::buffering::unbuffered
+         ^~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(351,24): error GA3F261DE: 'hwlib' has not been declared
+   class pin_out : public hwlib::pin_out {
+                          ^~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(351,31): error GC66A3811: expected '{' before 'pin_out'
+   class pin_out : public hwlib::pin_out {
+                                 ^~~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(352,1): error GFD5528CD: expected primary-expression before 'private'
+   private:
+   ^~~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(352,1): error GC66A3811: expected '}' before 'private'
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(356,1): error G49BDF932: expected unqualified-id before 'public'
+   public:
+   ^~~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(368,44): error G49BDF932: expected unqualified-id before ',' token
+         port{ port_registers( port_number ) },
+                                              ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(369,11): error G43F697D6: expected constructor, destructor, or type conversion before '{' token
+         mask{ 0x1U << pin_number }
+             ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(370,4): error G49BDF932: expected unqualified-id before '{' token
+      {
+      ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(380,11): error G43F697D6: expected constructor, destructor, or type conversion before '(' token
+      pin_out( pins name ):
+             ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(385,4): error G49BDF932: expected unqualified-id before '{' token
+      {}
+      ^
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(389,7): error GA3F261DE: 'hwlib' has not been declared
+         hwlib::buffering buf = hwlib::buffering::unbuffered
+         ^~~~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(389,24): error GC66A3811: expected ',' or '...' before 'buf'
+         hwlib::buffering buf = hwlib::buffering::unbuffered
+                          ^~~
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(390,6): error G4955DBA3: virt-specifiers in 'set' not allowed outside a class definition
+      ) override {
+        ^~~~~~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'void set(bool, int)':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(392,13): error G484219E0: 'port' was not declared in this scope
+            ?  port.PIO_SODR
+               ^~~~
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp:392:13: note: suggested alternative: 'Uart'
+            ?  port.PIO_SODR
+               ^~~~
+               Uart
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: At global scope:
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(396,1): error G4B649FC0: expected declaration before '}' token
+   };
+   ^
+  C:/ti-software/hwlib/library/hwlib-arduino-due.hpp: In function 'Pio& due::port_registers(uint32_t)':
+C:/ti-software/hwlib/library/hwlib-arduino-due.hpp(290,1): error G7F055ED9: control reaches end of non-void function [-Werror=return-type]
+   }
+   ^
   cc1plus.exe: all warnings being treated as errors
   bmptk-make: *** [main.o] Error 1
 F:\Software\Programming\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command "bmptk-make -f Makefile build" exited with code 2.
